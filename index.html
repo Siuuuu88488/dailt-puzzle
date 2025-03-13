@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Ultimate Game Hub</title>
-  <meta name="description" content="Ultimate Game Hub - a suite of addictive games, featuring hypercasual runners, daily puzzles, idle clickers, and more.">
+  <meta name="description" content="Ultimate Game Hub - a suite of addictive games featuring hypercasual runners, daily puzzles, idle clickers, social mini-games, and casual puzzles.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- AOS CSS for animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Google AdSense Script -->
@@ -16,7 +18,7 @@
   <!-- Publisher details: google.com, pub-3353441726662324, DIRECT, f08c47fec0942fa0 -->
 </head>
 <body>
-  <!-- Page Transition Container (for fade-out effect) -->
+  <!-- Page Transition Container -->
   <div id="page-transition"></div>
   
   <!-- Header -->
@@ -25,11 +27,11 @@
       <h1>Ultimate Game Hub</h1>
       <nav>
         <ul>
-          <li><a class="page-link" href="hypercasual.html">Hypercasual Runner</a></li>
-          <li><a class="page-link" href="daily-puzzle.html">Daily Puzzle</a></li>
-          <li><a class="page-link" href="idle-clicker.html">Idle Clicker</a></li>
-          <li><a class="page-link" href="social-mini.html">Social Mini-Game</a></li>
-          <li><a class="page-link" href="casual-puzzle.html">Casual Puzzle</a></li>
+          <li><a class="page-link" href="hypercasual.html"><i class="fa-solid fa-running"></i> Hypercasual Runner</a></li>
+          <li><a class="page-link" href="daily-puzzle.html"><i class="fa-solid fa-puzzle-piece"></i> Daily Puzzle</a></li>
+          <li><a class="page-link" href="idle-clicker.html"><i class="fa-solid fa-hand-pointer"></i> Idle Clicker</a></li>
+          <li><a class="page-link" href="social-mini.html"><i class="fa-solid fa-users"></i> Social Mini-Game</a></li>
+          <li><a class="page-link" href="casual-puzzle.html"><i class="fa-solid fa-lightbulb"></i> Casual Puzzle</a></li>
         </ul>
       </nav>
     </div>
@@ -39,7 +41,7 @@
   <main>
     <!-- Hero Section -->
     <section class="hero" data-aos="fade-up">
-      <div class="hero-content container">
+      <div class="container hero-content">
         <h2>Welcome to Ultimate Game Hub!</h2>
         <p>Discover a world of addictive, super simple games designed to challenge, entertain, and engage you every day.</p>
         <a href="hypercasual.html" class="btn page-link">Start Playing</a>
@@ -51,45 +53,55 @@
       <div class="container">
         <h2>Our Games</h2>
         <div class="card-container">
-          <!-- Card 1 -->
+          <!-- Card 1: Hypercasual Runner -->
           <div class="card" data-aos="flip-up">
-            <img src="images/hypercasual.jpg" alt="Hypercasual Runner">
+            <div class="card-icon">
+              <i class="fa-solid fa-running"></i>
+            </div>
             <div class="card-content">
               <h3>Hypercasual Runner</h3>
               <p>Experience a minimalistic endless runner with simple controls and addictive gameplay loops.</p>
               <a href="hypercasual.html" class="btn page-link">Play Now</a>
             </div>
           </div>
-          <!-- Card 2 -->
+          <!-- Card 2: Daily Puzzle -->
           <div class="card" data-aos="flip-up">
-            <img src="images/daily-puzzle.jpg" alt="Daily Puzzle">
+            <div class="card-icon">
+              <i class="fa-solid fa-puzzle-piece"></i>
+            </div>
             <div class="card-content">
               <h3>Daily Puzzle</h3>
               <p>Solve daily puzzles and trivia challenges, track your streak, and beat your high score.</p>
               <a href="daily-puzzle.html" class="btn page-link">Play Now</a>
             </div>
           </div>
-          <!-- Card 3 -->
+          <!-- Card 3: Idle Clicker -->
           <div class="card" data-aos="flip-up">
-            <img src="images/idle-clicker.jpg" alt="Idle Clicker">
+            <div class="card-icon">
+              <i class="fa-solid fa-hand-pointer"></i>
+            </div>
             <div class="card-content">
               <h3>Idle Clicker</h3>
               <p>Click to earn points, upgrade your skills, and watch your score soar in this incremental game.</p>
               <a href="idle-clicker.html" class="btn page-link">Play Now</a>
             </div>
           </div>
-          <!-- Card 4 -->
+          <!-- Card 4: Social Mini-Game -->
           <div class="card" data-aos="flip-up">
-            <img src="images/social-mini.jpg" alt="Social Mini-Game">
+            <div class="card-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
             <div class="card-content">
               <h3>Social Mini-Game</h3>
               <p>Challenge friends in fast-paced, competitive mini-games and climb the leaderboards.</p>
               <a href="social-mini.html" class="btn page-link">Play Now</a>
             </div>
           </div>
-          <!-- Card 5 -->
+          <!-- Card 5: Casual Puzzle -->
           <div class="card" data-aos="flip-up">
-            <img src="images/casual-puzzle.jpg" alt="Casual Puzzle">
+            <div class="card-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
             <div class="card-content">
               <h3>Casual Puzzle</h3>
               <p>Test your strategy and problem-solving skills with our engaging casual puzzle games.</p>
@@ -125,27 +137,9 @@
     </div>
   </footer>
   
-  <!-- AOS JS & Page Transition Script -->
+  <!-- AOS JS & Custom Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      easing: 'ease-out',
-      once: true
-    });
-    
-    // Page transition effect
-    const links = document.querySelectorAll('.page-link');
-    links.forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.body.classList.add('fade-out');
-        setTimeout(() => {
-          window.location = link.getAttribute('href');
-        }, 500);
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
 
