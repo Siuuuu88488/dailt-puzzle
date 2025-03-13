@@ -11,27 +11,34 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: #f7f7f7;
   color: #333;
+  line-height: 1.6;
   transition: opacity 0.5s ease;
 }
 body.fade-out {
   opacity: 0;
 }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 /* Header & Navigation */
 header {
   background: #2d89ef;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
   color: #fff;
 }
 header h1 {
   font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  flex-wrap: wrap;
 }
 nav ul li {
   margin: 0 15px;
@@ -80,7 +87,7 @@ nav ul li a:hover {
 
 /* Games Showcase Section */
 .games-showcase {
-  padding: 40px 20px;
+  padding: 40px 0;
   text-align: center;
 }
 .games-showcase h2 {
@@ -91,14 +98,12 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 .card {
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 .card:hover {
@@ -125,16 +130,17 @@ nav ul li a:hover {
   font-size: 0.9rem;
 }
 
-/* Google AdSense Placeholder */
+/* AdSense Section */
 .adsense {
-  margin: 40px auto;
+  margin: 40px 0;
   text-align: center;
 }
 
 /* Footer */
 footer {
+  background: #eaeaea;
+  padding: 20px 0;
   text-align: center;
-  padding: 20px;
   font-size: 0.9rem;
   color: #777;
 }
